@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097.3" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ListOfCitiesViewController" customModule="ForecastAPiTest" customModuleProvider="target">
+            <connections>
+                <outlet property="navigationBarView" destination="XPe-ub-xcX" id="dxb-gS-eJw"/>
+                <outlet property="tableView" destination="oCn-N4-KOy" id="3h8-B2-tMi"/>
+                <outlet property="view" destination="FH1-ne-WHj" id="lib-ul-bvi"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="FH1-ne-WHj">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XPe-ub-xcX" customClass="NavigationBarView" customModule="ForecastAPiTest" customModuleProvider="target">
+                    <rect key="frame" x="16" y="44" width="382" height="113"/>
+                    <color key="backgroundColor" cocoaTouchSystemColor="viewFlipsideBackgroundColor"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="113" placeholder="YES" id="Clp-Gl-orz"/>
+                    </constraints>
+                </view>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="oCn-N4-KOy">
+                    <rect key="frame" x="16" y="165" width="382" height="731"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <color key="separatorColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" cocoaTouchSystemColor="viewFlipsideBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="oCn-N4-KOy" firstAttribute="leading" secondItem="G3y-qy-31l" secondAttribute="leading" constant="16" id="17S-e3-quf"/>
+                <constraint firstItem="G3y-qy-31l" firstAttribute="trailing" secondItem="oCn-N4-KOy" secondAttribute="trailing" constant="16" id="NNb-OZ-eIX"/>
+                <constraint firstItem="XPe-ub-xcX" firstAttribute="top" secondItem="G3y-qy-31l" secondAttribute="top" id="Qj3-qF-FI1"/>
+                <constraint firstItem="XPe-ub-xcX" firstAttribute="trailing" secondItem="G3y-qy-31l" secondAttribute="trailing" constant="-16" id="hOF-QH-lqt"/>
+                <constraint firstItem="XPe-ub-xcX" firstAttribute="leading" secondItem="G3y-qy-31l" secondAttribute="leading" constant="16" id="jX7-Kh-xJq"/>
+                <constraint firstItem="oCn-N4-KOy" firstAttribute="top" secondItem="XPe-ub-xcX" secondAttribute="bottom" constant="8" id="jcv-Dd-qan"/>
+                <constraint firstAttribute="bottom" secondItem="oCn-N4-KOy" secondAttribute="bottom" id="soZ-KX-PIt"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="G3y-qy-31l"/>
+            <point key="canvasLocation" x="149" y="90"/>
+        </view>
+    </objects>
+</document>
