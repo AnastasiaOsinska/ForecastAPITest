@@ -69,7 +69,7 @@ final class APIManager {
     
     func getModel(queryItems: [QueryItems], completion: @escaping(_ result: Result<Weather, Error>) -> Void) {
         let url = URLs.baseURL
-        let parameters = ["X-Yandex-API-Key": "9a5a159d-13fb-4143-953f-603c84025062"]
+        let parameters = ["X-Yandex-API-Key": "ad4b89ce-cb2c-4cde-84f7-4b0ff1194139"]
         request(for: url, queryItems: queryItems.map { $0.urlQueryItem }, parameters: parameters, completion: completion)
     }
     
